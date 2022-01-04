@@ -1,0 +1,26 @@
+tasks:
+  - source: code_A.ipynb
+    params:
+      input_csv: input_data/sample_utf8.csv
+    product:
+      nb: output/log_code_A.ipynb
+      data: output/output_A.csv
+
+  - source: code_B.ipynb
+    product:
+      nb: output/log_code_B.ipynb
+      data: output/output_B.csv
+
+  - source: code_C.ipynb
+    product:
+      nb: output/log_code_C.ipynb
+      data: output/output_C.csv
+
+  - source: datalad_push.ipynb
+    product: workflow_output/push_log.ipynb
+    params:
+      CWD: /home/jovyan
+      save_path: csv_pipeline
+      save_message: 'update: modify on binder'
+      sibling: gin
+      sibling_url: ssh://root@dg02.dg.rcos.nii.ac.jp:3001/ivis-yoshida/sample-1.git

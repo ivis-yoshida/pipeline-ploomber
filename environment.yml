@@ -1,0 +1,22 @@
+name: ploomber-sample
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - atk-1.0=2.36.0
+  - ca-certificates=2021.5.30
+  - datalad
+  - openpyxl
+  - openssl=1.1.1l
+  - pip=21.2.4
+  - python=3.8.12
+  - python_abi=3.8
+  - readline=8.1
+  - setuptools=58.0.4
+  - wheel=0.37.0
+  - pygraphviz=1.7
+  - pip:
+    - ploomber==0.12.8
+    - ploomber-scaffold==0.2.4
+    - datalad
+prefix: /Users/Edu/miniconda3/envs/ploomber-workshop
