@@ -15,12 +15,3 @@ tasks:
     product:
       nb: output/log_code_C.ipynb
       data: output/output_C.csv
-
-  - source: datalad_push.ipynb
-    product: workflow_output/push_log.ipynb
-    params:
-      CWD: /home/jovyan
-      save_path: csv_pipeline
-      save_message: 'update: modify on binder'
-      sibling: gin
-      sibling_url: ssh://root@dg02.dg.rcos.nii.ac.jp:3001/ivis-yoshida/sample-1.git
