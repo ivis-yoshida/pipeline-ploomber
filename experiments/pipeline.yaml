@@ -1,0 +1,17 @@
+tasks:
+  - source: experiment1/source/experiment1.ipynb
+    params:
+      input_csv: experiment1/input_data/sample_utf8.csv
+    product:
+      nb: experiment1/output_data/log.ipynb
+      data: experiment1/output_data/output.csv
+
+  - source: experiment2/source/experiment2.ipynb
+    product:
+      nb: experiment2/output_data/log.ipynb
+      data: experiment2/output_data/output.csv
+
+  - source: experiment3/source/experiment3.ipynb
+    product:
+      nb: experiment3/output_data/log.ipynb
+      data: experiment3/output_data/output.csv

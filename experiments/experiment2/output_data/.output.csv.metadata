@@ -1,0 +1,1 @@
+{"timestamp": 1641284702.452113, "stored_source_code": "upstream =['experiment1']\nproduct = None\nimport os\nimport csv\n\nwith open(upstream['experiment1']['data'], 'r') as f:\n    line = [row for row in csv.reader(f)]\n\nwith open(product['data'], mode='w') as f:\n    writer = csv.writer(f, delimiter='\uff5c')\n    writer.writerows(line)\n", "params": {}}
